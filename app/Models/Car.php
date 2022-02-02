@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+
 class Car extends Model
 {
     use HasFactory;
@@ -14,4 +15,9 @@ class Car extends Model
     protected $primaryKey='id';
 
     protected $fillable=['name','founded','description'];
+
+    public function carmodels()
+    {
+        return $this->hasMany(CarModel::class);
+    }
 }

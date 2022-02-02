@@ -41,7 +41,9 @@
                     </span>
 
                     <h2 class="text-gray-700 text-5xl">
+                        <a href="/cars/{{ $car->id }}">
                         {{ $car->name }}
+                        </a>
                     </h2>
 
                     <p class="text-lg text-gray-700">
